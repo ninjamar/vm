@@ -9,6 +9,6 @@ or
 gcc src/compiler.c -o compiler
 ```
 ## Usage
-`./<compiler> <input>`
+`./<vm> <input>`
 
 Examples are located in `examples`
