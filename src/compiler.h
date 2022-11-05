@@ -26,16 +26,6 @@ char* loadfileintobuf(FILE *f, long **s){
     return fbuf;
 }
 
-int estimatesizeneeded(char *buf){
-    // ditry
-    char *token = strtok(buf, " \n");
-    int i =0;
-    while (token != NULL){
-        token = strtok(NULL, " \n");
-        i++;
-    }
-    return i;
-}
 int* tokenize(char *buf, long bs, long **s){
     int* outbuf = malloc(bs);
     for (int i=0; i<bs; i++){
